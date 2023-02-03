@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "run-p type-check build-only",
     "preview": "vite preview",
     "test:unit": "vitest --environment jsdom --root src/",
@@ -19,7 +19,8 @@
     "@vueuse/integrations": "^9.12.0",
     "pinia": "^2.0.28",
     "vue": "^3.2.45",
-    "vue-router": "^4.1.6"
+    "vue-router": "^4.1.6",
+    "zod": "^3.20.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.35.1",
@@ -37,6 +38,7 @@
     "jsdom": "^20.0.3",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.21",
+    "standard-version": "^9.5.0",
     "start-server-and-test": "^1.15.2",
     "tailwindcss": "^3.2.4",
     "typescript": "~4.7.4",
